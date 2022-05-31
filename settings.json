@@ -1,0 +1,320 @@
+{
+    "recital.usuarioRisc": "gabrielv",
+    "[recital]": {
+        "editor.tabSize": 3
+    },
+    "files.exclude": {
+        ".profile": true,
+        ".sh_history": true,
+        "[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]": true,
+        "*.ctl": true,
+        "**/*.[0-9][0-9][0-9]*": true,
+        "**/*.bak": true,
+        "**/*.dbf*": true,
+        "**/*.dbo*": true,
+        "**/*.dia*": true,
+        "**/*.ped": true,
+        "**/*.pcp": true,
+        "**/*.exp": true,
+        "**/*.tar.gz": true,
+        "**/*.tmp": true,
+        "**/*.Z": true,
+        "**/*.eby*": true,
+        "**/*.fer*": true,
+        "**/*.gava*": true,
+        "**/*.jai*": true,
+        "**/*.lixo*": true
+    },
+    "search.exclude": {
+        "**/*.log": true
+    },
+    "workspaceExplorer.workspaceStorageDirectory": "C:\\Users\\gabrielv\\Documents\\vscode-workspaces",
+    "editor.fontLigatures": "'onum', 'cv01', 'cv02', 'ss05', 'ss04', 'ss03', 'ss01', 'liga', 'calt'",
+    "editor.fontFamily": "Fira Code",
+    "editor.cursorStyle": "underline-thin",
+    "editor.bracketPairColorization.enabled": true,
+    "workbench.editor.enablePreview": false,
+    "explorer.confirmDelete": false,
+    "editor.cursorBlinking": "smooth",
+    "editor.smoothScrolling": true,
+    "explorer.confirmDragAndDrop": false,
+    "gremlins.showInProblemPane": true,
+    "commentAnchors.tags.list": [
+        {
+            "tag": "ANCHOR",
+            "iconColor": "#BEBFC6",
+            "highlightColor": "#BEBFC6",
+            "styleComment": true,
+            "scope": "file"
+        },
+        {
+            "tag": "TO-DO",
+            "iconColor": "#3ea8ff",
+            "highlightColor": "#3ea8ff",
+            "styleComment": true,
+            "scope": "workspace"
+        },
+        {
+            "tag": "FIXME",
+            "iconColor": "#F44336",
+            "highlightColor": "#F44336",
+            "styleComment": true,
+            "scope": "workspace"
+        },
+        {
+            "tag": "STUB",
+            "iconColor": "#BA68C8",
+            "highlightColor": "#BA68C8",
+            "scope": "file"
+        },
+        {
+            "tag": "NOTE",
+            "iconColor": "#FFB300",
+            "highlightColor": "#FFB300",
+            "styleComment": true,
+            "scope": "file"
+        },
+        {
+            "tag": "REVIEW",
+            "iconColor": "#64DD17",
+            "highlightColor": "#64DD17",
+            "styleComment": true,
+            "scope": "workspace"
+        },
+        {
+            "tag": "SECTION",
+            "iconColor": "#896afc",
+            "highlightColor": "#896afc",
+            "scope": "workspace",
+            "behavior": "region"
+        },
+        {
+            "tag": "LINK",
+            "iconColor": "#2ecc71",
+            "highlightColor": "#2ecc71",
+            "scope": "workspace",
+            "behavior": "link"
+        }
+    ],
+    "editor.lineNumbers": "relative",
+    "commentAnchors.showCursor": true,
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.duration": 350,
+    "vim.useSystemClipboard": true,
+    "diffEditor.maxComputationTime": 0,
+    "vim.easymotion": true,
+    "vim.camelCaseMotion.enable": true,
+    "vim.replaceWithRegister": true,
+    "vim.sneak": true,
+    "vim.sneakReplacesF": true,
+    "settingsSync.ignoredExtensions": [
+        "donelli.recital"
+    ],
+    "explorer.sortOrder": "type",
+    "explorer.sortOrderLexicographicOptions": "unicode",
+    "vim.foldfix": true,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "Y"
+            ],
+            "after": [
+                "y",
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "o"
+            ],
+            "after": [
+                "o",
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "O"
+            ],
+            "after": [
+                "O",
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "n"
+            ],
+            "after": [
+                "g",
+                "g",
+                "n"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "N"
+            ],
+            "after": [
+                "G",
+                "N"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "]"
+            ],
+            "after": [
+                "c",
+                "s",
+                "\"",
+                "]"
+            ]
+        },
+        {
+            "before": [
+                "<C-h>"
+            ],
+            "after": [
+                "<C-w>",
+                "h"
+            ]
+        },
+        {
+            "before": [
+                "<C-j>"
+            ],
+            "after": [
+                "<C-w>",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "<C-k>"
+            ],
+            "after": [
+                "<C-w>",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "<C-l>"
+            ],
+            "after": [
+                "<C-w>",
+                "l"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "commands": [
+                "revealInExplorer"
+            ],
+        },
+        {
+            "before": [
+                "<Leader>",
+                "1"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "2"
+            ],
+            "commands": [
+                "workbench.action.gotoSymbol"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "3"
+            ],
+            "commands": [
+                "workbench.action.showCommands"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "<Leader>",
+                "+"
+            ],
+            "commands": [
+                "editor.action.transformToUppercase"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "-"
+            ],
+            "commands": [
+                "editor.action.transformToLowercase"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "<"
+            ],
+            "commands": [
+                "editor.action.sortLinesAscending"
+            ]
+
+        },
+        {
+            "before": [
+                "<Leader>",
+                ">"
+            ],
+            "commands": [
+                "editor.action.sortLinesDescending"
+            ]
+
+        }
+    ],
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.startupEditor": "none",
+    "editor.suggest.showKeywords": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.linkedEditing": true,
+    "vim.smartRelativeLine": true,
+    "editor.minimap.enabled": false,
+    "editor.cursorSmoothCaretAnimation": true,
+    "vim.visualstar": true,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "files.insertFinalNewline": true,
+    "workbench.list.smoothScrolling": true,
+    "timeline.excludeSources": [],
+    "workbench.colorTheme": "One Monokai",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.productIconTheme": "developer-icons",
+    "git.confirmSync": false,
+    "vim.leader": ","
+}
