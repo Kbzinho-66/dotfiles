@@ -29,7 +29,7 @@ window:
   # Values for `decorations`:
   #     - full: Borders and title bar
   #     - none: Neither borders nor title bar
-  decorations: full
+  decorations: none
 
   # GTK theme variant (Linux/BSD only)
   #
@@ -37,7 +37,7 @@ window:
   # and `light`. Set this to `None` to use the default theme variant.
   gtk_theme_variant: dark
 
-#scrolling:
+scrolling:
   # Maximum number of lines in the scrollback buffer.
   # Specifying '0' will disable scrolling.
   history: 10000
@@ -264,10 +264,10 @@ colors:
 window:
   opacity: 0.9
 
-#selection:
+selection:
   # This string contains all characters that are used as separators for
   # "semantic words" in Alacritty.
-  #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
   # When set to `true`, selected text will be copied to the primary clipboard.
   save_to_clipboard: true
@@ -324,8 +324,8 @@ live_config_reload: true
 #   - (macOS) /bin/bash --login
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
-# shell:
-#  program: /bin/bash
+#shell:
+#  program: usr/bin/bash
 #  args:
 #    - --login
 
@@ -727,4 +727,4 @@ key_bindings:
   #log_level: Warn
 
   # Print all received window events.
-  #print_events: false
+print_events: false
