@@ -1,320 +1,293 @@
 {
-    "recital.usuarioRisc": "gabrielv",
-    "[recital]": {
-        "editor.tabSize": 3
+  "[recital]": {
+    "editor.tabSize": 3
+  },
+  "commentAnchors.showCursor": true,
+  "commentAnchors.tags.list": [
+    {
+      "tag": "ANCHOR",
+      "iconColor": "#BEBFC6",
+      "highlightColor": "#BEBFC6",
+      "styleComment": true,
+      "scope": "file"
     },
-    "files.exclude": {
-        ".profile": true,
-        ".sh_history": true,
-        "[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]": true,
-        "*.ctl": true,
-        "**/*.[0-9][0-9][0-9]*": true,
-        "**/*.bak": true,
-        "**/*.dbf*": true,
-        "**/*.dbo*": true,
-        "**/*.dia*": true,
-        "**/*.ped": true,
-        "**/*.pcp": true,
-        "**/*.exp": true,
-        "**/*.tar.gz": true,
-        "**/*.tmp": true,
-        "**/*.Z": true,
-        "**/*.eby*": true,
-        "**/*.fer*": true,
-        "**/*.gava*": true,
-        "**/*.jai*": true,
-        "**/*.lixo*": true
+    {
+      "tag": "TO-DO",
+      "iconColor": "#3ea8ff",
+      "highlightColor": "#3ea8ff",
+      "styleComment": true,
+      "scope": "workspace"
     },
-    "search.exclude": {
-        "**/*.log": true
+    {
+      "tag": "FIXME",
+      "iconColor": "#F44336",
+      "highlightColor": "#F44336",
+      "styleComment": true,
+      "scope": "workspace"
     },
-    "workspaceExplorer.workspaceStorageDirectory": "C:\\Users\\gabrielv\\Documents\\vscode-workspaces",
-    "editor.fontLigatures": "'onum', 'cv01', 'cv02', 'ss05', 'ss04', 'ss03', 'ss01', 'liga', 'calt'",
-    "editor.fontFamily": "Fira Code",
-    "editor.cursorStyle": "underline-thin",
-    "editor.bracketPairColorization.enabled": true,
-    "workbench.editor.enablePreview": false,
-    "explorer.confirmDelete": false,
-    "editor.cursorBlinking": "smooth",
-    "editor.smoothScrolling": true,
-    "explorer.confirmDragAndDrop": false,
-    "gremlins.showInProblemPane": true,
-    "commentAnchors.tags.list": [
-        {
-            "tag": "ANCHOR",
-            "iconColor": "#BEBFC6",
-            "highlightColor": "#BEBFC6",
-            "styleComment": true,
-            "scope": "file"
-        },
-        {
-            "tag": "TO-DO",
-            "iconColor": "#3ea8ff",
-            "highlightColor": "#3ea8ff",
-            "styleComment": true,
-            "scope": "workspace"
-        },
-        {
-            "tag": "FIXME",
-            "iconColor": "#F44336",
-            "highlightColor": "#F44336",
-            "styleComment": true,
-            "scope": "workspace"
-        },
-        {
-            "tag": "STUB",
-            "iconColor": "#BA68C8",
-            "highlightColor": "#BA68C8",
-            "scope": "file"
-        },
-        {
-            "tag": "NOTE",
-            "iconColor": "#FFB300",
-            "highlightColor": "#FFB300",
-            "styleComment": true,
-            "scope": "file"
-        },
-        {
-            "tag": "REVIEW",
-            "iconColor": "#64DD17",
-            "highlightColor": "#64DD17",
-            "styleComment": true,
-            "scope": "workspace"
-        },
-        {
-            "tag": "SECTION",
-            "iconColor": "#896afc",
-            "highlightColor": "#896afc",
-            "scope": "workspace",
-            "behavior": "region"
-        },
-        {
-            "tag": "LINK",
-            "iconColor": "#2ecc71",
-            "highlightColor": "#2ecc71",
-            "scope": "workspace",
-            "behavior": "link"
-        }
-    ],
-    "editor.lineNumbers": "relative",
-    "commentAnchors.showCursor": true,
-    "vim.highlightedyank.enable": true,
-    "vim.highlightedyank.duration": 350,
-    "vim.useSystemClipboard": true,
-    "diffEditor.maxComputationTime": 0,
-    "vim.easymotion": true,
-    "vim.camelCaseMotion.enable": true,
-    "vim.replaceWithRegister": true,
-    "vim.sneak": true,
-    "vim.sneakReplacesF": true,
-    "settingsSync.ignoredExtensions": [
-        "donelli.recital"
-    ],
-    "explorer.sortOrder": "type",
-    "explorer.sortOrderLexicographicOptions": "unicode",
-    "vim.foldfix": true,
-    "vim.normalModeKeyBindings": [
-        {
-            "before": [
-                "Y"
-            ],
-            "after": [
-                "y",
-                "$"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "o"
-            ],
-            "after": [
-                "o",
-                "<Esc>"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "O"
-            ],
-            "after": [
-                "O",
-                "<Esc>"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "n"
-            ],
-            "after": [
-                "g",
-                "g",
-                "n"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "N"
-            ],
-            "after": [
-                "G",
-                "N"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "]"
-            ],
-            "after": [
-                "c",
-                "s",
-                "\"",
-                "]"
-            ]
-        },
-        {
-            "before": [
-                "<C-h>"
-            ],
-            "after": [
-                "<C-w>",
-                "h"
-            ]
-        },
-        {
-            "before": [
-                "<C-j>"
-            ],
-            "after": [
-                "<C-w>",
-                "j"
-            ]
-        },
-        {
-            "before": [
-                "<C-k>"
-            ],
-            "after": [
-                "<C-w>",
-                "k"
-            ]
-        },
-        {
-            "before": [
-                "<C-l>"
-            ],
-            "after": [
-                "<C-w>",
-                "l"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "t"
-            ],
-            "commands": [
-                "workbench.action.toggleSidebarVisibility"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "f"
-            ],
-            "commands": [
-                "revealInExplorer"
-            ],
-        },
-        {
-            "before": [
-                "<Leader>",
-                "1"
-            ],
-            "commands": [
-                "workbench.action.quickOpen"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "2"
-            ],
-            "commands": [
-                "workbench.action.gotoSymbol"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "3"
-            ],
-            "commands": [
-                "workbench.action.showCommands"
-            ]
-        }
-    ],
-    "vim.visualModeKeyBindings": [
-        {
-            "before": [
-                "<Leader>",
-                "+"
-            ],
-            "commands": [
-                "editor.action.transformToUppercase"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "-"
-            ],
-            "commands": [
-                "editor.action.transformToLowercase"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "<"
-            ],
-            "commands": [
-                "editor.action.sortLinesAscending"
-            ]
+    {
+      "tag": "STUB",
+      "iconColor": "#BA68C8",
+      "highlightColor": "#BA68C8",
+      "scope": "file"
+    },
+    {
+      "tag": "NOTE",
+      "iconColor": "#FFB300",
+      "highlightColor": "#FFB300",
+      "styleComment": true,
+      "scope": "file"
+    },
+    {
+      "tag": "REVIEW",
+      "iconColor": "#64DD17",
+      "highlightColor": "#64DD17",
+      "styleComment": true,
+      "scope": "workspace"
+    },
+    {
+      "tag": "SECTION",
+      "iconColor": "#896afc",
+      "highlightColor": "#896afc",
+      "scope": "workspace",
+      "behavior": "region"
+    },
+    {
+      "tag": "LINK",
+      "iconColor": "#2ecc71",
+      "highlightColor": "#2ecc71",
+      "scope": "workspace",
+      "behavior": "link"
+    }
+  ],
+  "diffEditor.maxComputationTime": 0,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorStyle": "underline-thin",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": "'onum', 'cv01', 'cv02', 'ss05', 'ss04', 'ss03', 'ss01', 'liga', 'calt'",
+  "editor.lineNumbers": "relative",
+  "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
+  "editor.smoothScrolling": true,
+  "editor.suggest.showKeywords": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.sortOrder": "type",
+  "explorer.sortOrderLexicographicOptions": "unicode",
+  "files.exclude": {
+    ".profile": true,
+    ".sh_history": true,
+    "[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]": true,
+    "*.ctl": true,
+    "*.ped": true,
+    "**/*.[0-9][0-9][0-9]*": true,
+    "**/*.bak": true,
+    "**/*.dbf*": true,
+    "**/*.dbo*": true,
+    "**/*.dia*": true,
+    "**/*.eby*": true,
+    "**/*.exp": true,
+    "**/*.fer*": true,
+    "**/*.gava*": true,
+    "**/*.jai*": true,
+    "**/*.lixo*": true,
+    "**/*.pcp": true,
+    "**/*.ped": true,
+    "**/*.tar.gz": true,
+    "**/*.tmp": true,
+    "**/*.Z": true
+  },
+  "files.insertFinalNewline": true,
+  "git.confirmSync": false,
+  "gremlins.showInProblemPane": true,
+  "php.validate.enable": false,
+  "recital.usuarioRisc": "gabrielv",
+  "search.exclude": {
+    "**/*.log": true
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "settingsSync.ignoredExtensions": [
+    "donelli.recital"
+  ],
+  "timeline.excludeSources": [],
+  "vim.camelCaseMotion.enable": true,
+  "vim.easymotion": true,
+  "vim.foldfix": true,
+  "vim.highlightedyank.duration": 350,
+  "vim.highlightedyank.enable": true,
+  "vim.leader": ",",
+  "vim.normalModeKeyBindings": [
+    { 
+      "before": [ "Y" ],
+      "after": [ "y", "$" ]
+    },
+    {
+      "before": [ "<Leader>", "o" ],
+      "after": [ "o", "<Esc>" ]
+    },
+    {
+      "before": [ "<Leader>", "O" ],
+      "after": [ "O", "<Esc>" ]
+    },
+    {
+      "before": [ "<Leader>", "]" ],
+      "after": [ "c", "s", "\"", "]" ]
+    },
+    {
+      "before": [ "<C-h>" ],
+      "after": [ "<C-w>", "h" ]
+    },
+    {
+      "before": [ "<C-j>" ],
+      "after": [ "<C-w>", "j" ]
+    },
+    {
+      "before": [ "<C-k>" ],
+      "after": [ "<C-w>", "k" ]
+    },
+    {
+      "before": [ "<C-l>" ],
+      "after": [ "<C-w>", "l" ]
+    },
+    {
+      "before": [ "<leader>", "t" ],
+      "commands": [ "workbench.action.toggleSidebarVisibility" ]
+    },
+    {
+      "before": [ "<leader>", "f" ],
+      "commands": [ "revealInExplorer" ],
+    },
+    {
+      "before": [ "<Leader>", "1" ],
+      "commands": [ "workbench.action.quickOpen" ]
+    },
+    {
+      "before": [ "<Leader>", "2" ],
+      "commands": [ "workbench.action.gotoSymbol" ]
+    },
+    {
+      "before": [ "<Leader>", "3" ],
+      "commands": [ "workbench.action.showCommands" ]
+    },
+    {
+      "before": [ "<Leader>", "%" ],
+      "commands": [ "editor.emmet.action.matchTag" ]
+    },
+    {
+      "before": [ "<Leader>", "d" ],
+      "after": [ "?", "function", "<Enter>", "w" ]
+    },
+    {
+      "before": [ "<Leader>", "a" ],
+      "commands": [ "wwm.aligncode" ]
+    },
+    {
+      "before": [ "<Leader>", "A" ],
+      "commands": [ "align.by.regex" ]
+    },
+    {
+      "before": [ "<Leader>", "<Leader>", "a" ],
+      "commands": [ "yo1dog.cursor-align.alignCursors" ]
+    },
+    {
+      "before": [ "<Leader>", "\"" ],
+      "after": [ "y", "s", "i", "w", "\"" ]
+    },
+    {
+      "before": [ "<Leader>", "U" ],
+      "commands": [ "workbench.action.files.revert" ]
+    }
+  ],
+  "vim.replaceWithRegister": true,
+  "vim.smartRelativeLine": true,
+  "vim.sneak": true,
+  "vim.sneakReplacesF": true,
+  "vim.useSystemClipboard": true,
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [
+        "<Leader>",
+        "+"
+      ],
+      "commands": [
+        "editor.action.transformToUppercase"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "-"
+      ],
+      "commands": [
+        "editor.action.transformToLowercase"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "<"
+      ],
+      "commands": [
+        "editor.action.sortLinesAscending"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        ">"
+      ],
+      "commands": [
+        "editor.action.sortLinesDescending"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "a"
+      ],
+      "commands": [
+        "wwm.aligncode"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "A"
+      ],
+      "commands": [
+        "align.by.regex"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "<Leader>",
+        "a"
+      ],
+      "commands": [
+        "yo1dog.cursor-align.alignCursors"
+      ]
+    }
 
-        },
-        {
-            "before": [
-                "<Leader>",
-                ">"
-            ],
-            "commands": [
-                "editor.action.sortLinesDescending"
-            ]
-
-        }
-    ],
-    "editor.acceptSuggestionOnCommitCharacter": false,
-    "security.workspace.trust.untrustedFiles": "open",
-    "workbench.startupEditor": "none",
-    "editor.suggest.showKeywords": false,
-    "editor.acceptSuggestionOnEnter": "off",
-    "editor.linkedEditing": true,
-    "vim.smartRelativeLine": true,
-    "editor.minimap.enabled": false,
-    "editor.cursorSmoothCaretAnimation": true,
-    "vim.visualstar": true,
-    "diffEditor.ignoreTrimWhitespace": true,
-    "files.insertFinalNewline": true,
-    "workbench.list.smoothScrolling": true,
-    "timeline.excludeSources": [],
-    "workbench.colorTheme": "One Monokai",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.productIconTheme": "developer-icons",
-    "git.confirmSync": false,
-    "vim.leader": ","
+  ],
+  "vim.visualstar": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.list.smoothScrolling": true,
+  "workbench.startupEditor": "none",
+  "workspaceExplorer.workspaceStorageDirectory": "C:\\Users\\gabrielv\\Documents\\vscode-workspaces",
+  "workbench.productIconTheme": "developer-icons",
+  "workbench.iconTheme": "developer-icon-theme",
+  "editor.renderWhitespace": "none",
+  "emmet.useInlineCompletions": true,
+  "window.enableMenuBarMnemonics": false,
+  "explorer.autoReveal": "focusNoScroll",
+  "workbench.colorTheme": "One Monokai",
+  "window.menuBarVisibility": "compact",
+  "tabnine.experimentalAutoImports": true,
+  "workbench.localHistory.mergeWindow": 30,
+  "workbench.localHistory.maxFileSize": 512,
 }
