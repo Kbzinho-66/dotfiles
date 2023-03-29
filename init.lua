@@ -49,17 +49,26 @@ require('packer').startup(function(use)
   use 'tpope/vim-rhubarb'
   use 'lewis6991/gitsigns.nvim'
 
+  -- Visual stuff
   use 'navarasu/onedark.nvim' -- Theme inspired by Atom
+  use 'AlexvZyl/nordic.nvim'
   use 'nvim-lualine/lualine.nvim' -- Fancier statusline
   use 'lukas-reineke/indent-blankline.nvim' -- Add indentation guides even on blank lines
   use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
-  use 'tpope/vim-sleuth' -- Detect tabstop and shiftwidth automatically
+  -- use 'tpope/vim-sleuth' -- Detect tabstop and shiftwidth automatically
+
+  -- Plugins from Mini.nvim
+  use 'echasnovski/mini.align'
+  use 'echasnovski/mini.pairs'
+  use 'echasnovski/mini.surround'
 
   -- Fuzzy Finder (files, lsp, etc)
   use { 'nvim-telescope/telescope.nvim', branch = '0.1.x', requires = { 'nvim-lua/plenary.nvim' } }
 
   -- Fuzzy Finder Algorithm which requires local dependencies to be built. Only load if `make` is available
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make', cond = vim.fn.executable 'make' == 1 }
+
+  use 'lervag/vimtex'
 
   -- Add custom plugins to packer from ~/.config/nvim/lua/custom/plugins.lua
   local has_plugins, plugins = pcall(require, 'custom.plugins')
@@ -101,12 +110,17 @@ vim.o.hlsearch = false
 
 -- Make line numbers default
 vim.wo.number = true
+vim.wo.relativenumber = true
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
 
--- Enable break indent
+-- Indentation related settings
 vim.o.breakindent = true
+vim.o.autoindent = true
+vim.o.shiftwidth = 4
+vim.o.smarttab = true
+vim.o.tabstop = 4
 
 -- Save undo history
 vim.o.undofile = true
@@ -125,6 +139,14 @@ vim.cmd [[colorscheme onedark]]
 
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
+
+-- Vimtex Configs
+vim.g.vimtex_view_method = 'zathura'
+vim.g.vimtex_quickfix_ignore_filters = {
+    'Underfull \\hbox',
+    'Overfull \\hbox',
+    'Package hyperref Warning: Token not allowed in a PDF string',
+}
 
 -- [[ Basic Keymaps ]]
 -- Set <space> as the leader key
@@ -168,6 +190,11 @@ require('lualine').setup {
 
 -- Enable Comment.nvim
 require('Comment').setup()
+
+-- Enable Mini plugins
+require('mini.align').setup()
+require('mini.pairs').setup()
+require('mini.surround').setup()
 
 -- Enable `lukas-reineke/indent-blankline.nvim`
 -- See `:help indent_blankline.txt`
