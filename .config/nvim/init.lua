@@ -72,6 +72,21 @@ require('packer').startup(function(use)
   use 'lervag/vimtex'
   use 'amarakon/nvim-cmp-lua-latex-symbols'
 
+  -- Which-key (Keymaps helper)
+  use {
+    'folke/which-key.nvim',
+    config = function()
+      vim.o.timeout = true
+      vim.o.timeoutlen = 400
+      require('which-key').setup { }
+    end
+  }
+
+  use {
+    'mg979/vim-visual-multi',
+    branch = 'master'
+  }
+
   -- Add custom plugins to packer from ~/.config/nvim/lua/custom/plugins.lua
   local has_plugins, plugins = pcall(require, 'custom.plugins')
   if has_plugins then
@@ -166,10 +181,10 @@ vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = tr
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
 -- Copy and paste from clipboard
-vim.keymap.set({'v', 'n', 'o'}, '<leader>y', '"+y', { remap = true, silent = true })
-vim.keymap.set({'v', 'n', 'o'}, '<leader>Y', '"+yg_', { remap = true, silent = true })
-vim.keymap.set({'v', 'n', 'o'}, '<leader>p', '"+p', { remap = true, silent = true })
-vim.keymap.set({'v', 'n', 'o'}, '<leader>P', '"+P', { remap = true, silent = true })
+vim.keymap.set({'v', 'n', 'o'}, '<leader>y', '"+y', { remap = true, silent = true, desc = 'Yank selection to clipboard' })
+vim.keymap.set({'v', 'n', 'o'}, '<leader>Y', '"+yg_', { remap = true, silent = true, desc = 'Yank to end of line to clipboard' })
+vim.keymap.set({'v', 'n', 'o'}, '<leader>p', '"+p', { remap = true, silent = true, desc = 'Paste from clipboard' })
+vim.keymap.set({'v', 'n', 'o'}, '<leader>P', '"+P', { remap = true, silent = true, desc = 'Backward paste from clipboard' })
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
@@ -259,7 +274,7 @@ vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { de
 -- See `:help nvim-treesitter`
 require('nvim-treesitter.configs').setup {
   -- Add languages to be installed here that you want installed for treesitter
-  ensure_installed = { 'c', 'cpp', 'elixir', 'go', 'lua', 'python', 'rust', 'typescript', 'help', 'vim' },
+  ensure_installed = { 'c', 'cpp', 'elixir', 'julia', 'lua', 'rust', 'typescript', 'help', 'vim' },
 
   highlight = { enable = true },
   indent = { enable = true, disable = { 'python' } },
@@ -319,10 +334,10 @@ require('nvim-treesitter.configs').setup {
 }
 
 -- Diagnostic keymaps
-vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
-vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
-vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist)
+vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic' })
+vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic' })
+vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show diagnostic' })
+vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Show diagnostic list' })
 
 -- LSP settings.
 --  This function gets run when an LSP connects to a particular buffer.
@@ -382,10 +397,10 @@ local servers = {
   -- tsserver = {},
 
   -- sumneko_lua = {
-  --   Lua = {
-  --     workspace = { checkThirdParty = false },
-  --     telemetry = { enable = false },
-  --   },
+    -- Lua = {
+    --   workspace = { checkThirdParty = false },
+    --   telemetry = { enable = false },
+    -- },
   -- },
 }
 
