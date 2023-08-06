@@ -1,3 +1,3 @@
-function config --wraps='usr/bin/git --git-dir=/home/gabriel/.cfg/ --work-tree=/home/gabriel' --wraps='/usr/bin/git --git-dir=/home/gabriel/.cfg/ --work-tree=/home/gabriel' --description 'alias config=/usr/bin/git --git-dir=/home/gabriel/.cfg/ --work-tree=/home/gabriel'
-  /usr/bin/git --git-dir=/home/gabriel/.cfg/ --work-tree=/home/gabriel $argv; 
+function config --wraps='usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/'USEUSERR --wraps='/usr/bin/git --git-dir=/USERome/$USER/.cfg/ --work-tree=/home/$USER' --description 'alias config=/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER'
+    /usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER $argv
 end
