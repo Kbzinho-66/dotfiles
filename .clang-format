@@ -1,62 +1,221 @@
 ﻿---
-AlignAfterOpenBracket: Align
-AlignConsecutiveAssignments: 'false'
-AlignConsecutiveDeclarations: 'false'
-AlignEscapedNewlines: Left
-AlignOperands: 'true'
-AlignTrailingComments: 'true'
-AllowAllArgumentsOnNextLine: 'false'
-AllowAllConstructorInitializersOnNextLine: 'true'
-AllowAllParametersOfDeclarationOnNextLine: 'false'
-AllowShortBlocksOnASingleLine: 'true'
-AllowShortCaseLabelsOnASingleLine: 'true'
-AllowShortFunctionsOnASingleLine: All
-AllowShortIfStatementsOnASingleLine: WithoutElse
-AllowShortLambdasOnASingleLine: All
-AllowShortLoopsOnASingleLine: 'true'
-AlwaysBreakAfterReturnType: None
-AlwaysBreakBeforeMultilineStrings: 'true'
-AlwaysBreakTemplateDeclarations: 'No'
-BinPackArguments: 'true'
-BinPackParameters: 'true'
-BreakBeforeBinaryOperators: NonAssignment
-BreakBeforeBraces: Attach
-BreakBeforeTernaryOperators: 'true'
-BreakConstructorInitializers: AfterColon
-BreakInheritanceList: AfterColon
-ColumnLimit: '120'
-CompactNamespaces: 'false'
-ConstructorInitializerAllOnOneLineOrOnePerLine: 'true'
-Cpp11BracedListStyle: 'true'
-DerivePointerAlignment: 'true'
-FixNamespaceComments: 'true'
-IncludeBlocks: Regroup
-IndentCaseLabels: 'true'
-IndentPPDirectives: BeforeHash
-IndentWidth: '4'
-IndentWrappedFunctionNames: 'true'
-KeepEmptyLinesAtTheStartOfBlocks: 'true'
+# Language this style applies to 
 Language: Cpp
-MaxEmptyLinesToKeep: '1'
-NamespaceIndentation: Inner
-PointerAlignment: Left
-SortIncludes: 'true'
-SpaceAfterCStyleCast: 'true'
-SpaceAfterLogicalNot: 'false'
-SpaceAfterTemplateKeyword: 'true'
-SpaceBeforeAssignmentOperators: 'true'
-SpaceBeforeCpp11BracedList: 'true'
-SpaceBeforeCtorInitializerColon: 'true'
-SpaceBeforeInheritanceColon: 'true'
+Standard: c++20
+
+# Outdent access modifiers such as 'public'
+AccessModifierOffset: -2
+
+# Always break after an open bracket if the parameters don’t fit on a single line.
+# Closing brackets will be placed on a new line.
+# This applies to parentheses, angle brackets and square brackets
+AlignAfterOpenBracket: BlockIndent
+
+# Don't align either assignments or declarations
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+
+# Align backslashes in escaped newlines as far left as possible
+AlignEscapedNewlines: Left
+
+# Align both operators and operands
+AlignOperands: AlignAfterOperator
+
+# Only align consecutive trailing comments
+AlignTrailingComments:
+  Kind: Always
+
+# If a function call or braced initializer list doesn’t fit on a line, put all arguments onto the next line
+AllowAllArgumentsOnNextLine: true
+
+# If the function declaration doesn’t fit on a line, allow putting all parameters of a function declaration onto the next line
+AllowAllParametersOfDeclarationOnNextLine: true
+
+# Always merge short blocks into a single line.
+AllowShortBlocksOnASingleLine: Always
+
+# Contract short case labels to a single line
+AllowShortCaseLabelsOnASingleLine: true
+
+# Allow short enums on a single line
+AllowShortEnumsOnASingleLine: true
+
+# Contract all short functions into a single line
+AllowShortFunctionsOnASingleLine: All
+
+# Put short ifs on the same line only if there is no else statement.
+AllowShortIfStatementsOnASingleLine: WithoutElse
+
+# Contract lambda into a single line if it's an argument of a function
+AllowShortLambdasOnASingleLine: Inline
+
+# Allow short loops to be contracted into a single line
+AllowShortLoopsOnASingleLine: true
+
+# Never break after return type
+AlwaysBreakAfterReturnType: None
+
+# Makes multiline string look more consistent
+AlwaysBreakBeforeMultilineStrings: true
+
+# Always break after template declarations
+AlwaysBreakTemplateDeclarations: Yes
+
+# Arguments and parameters must all be on on the same line or have one line each
+BinPackArguments: false
+BinPackParameters: false
+
+# Always keep attributes on their own line
+BreakAfterAttributes: Always
+
+# Break before operators that aren't assignments
+BreakBeforeBinaryOperators: NonAssignment
+
+# Always attach braces to surrounding context
+BreakBeforeBraces: Attach
+
+# Place each operator in a new line
+BreakBeforeTernaryOperators: true
+
+# Keep colon on same line as constructor
+BreakConstructorInitializers: AfterColon
+
+# Keep first inheritance on same line as class
+BreakInheritanceList: AfterComma
+
+# Keep string literals as is
+BreakStringLiterals: false
+
+# 90 makes it easier to have 2 splits
+ColumnLimit: 90
+
+# Declare each new namespace on a new line
+CompactNamespaces: false
+
+# Don't format braced lists
+Cpp11BracedListStyle: false
+
+# Analyze the file for the most common alignment of & and *.
+DerivePointerAlignment: true
+# Use right alignment as fallback for pointers
+PointerAlignment: Right
+# Use left alignment as fallback for references
+ReferenceAlignment: Left
+
+# Keep existing empty lines after access modifiers
+EmptyLineAfterAccessModifier: Leave
+
+# Add an empty line before all access modifiers but the first one
+EmptyLineBeforeAccessModifier: Always
+
+# Analyze the file and detect if function calls and definitions are formatted with one
+# parameter per line or not
+ExperimentalAutoDetectBinPacking: true
+
+# Don't add namespace end comments
+FixNamespaceComments: false
+
+# Sort all includes as one and split into groups
+IncludeBlocks: Regroup
+
+# Keep case blocks on the same level as their label
+IndentCaseBlocks: false
+
+# Indent case labels one level from the switch statement
+IndentCaseLabels: true
+
+# Indent directives after the hash
+IndentPPDirectives: AfterHash
+
+# Number of columns for each indent level
+IndentWidth: 4
+
+# Don't indent wrapped definitions or declarations
+IndentWrappedFunctionNames: false
+
+# Insert a newline at end of file if missing
+InsertNewlineAtEOF: true
+
+# Remove empty lines at start of blocks
+KeepEmptyLinesAtTheStartOfBlocks: false
+
+# Keep at most 1 blank line between non-blank lines
+MaxEmptyLinesToKeep: 1
+
+# Indent each nested namespace
+NamespaceIndentation: All
+
+# Indent preprocessor statements by 1 column
+PPIndentWidth: 1
+
+# Put all constructor initializers on the current line if they fit. Otherwise, put each one on its own line.
+PackConstructorInitializers: CurrentLine
+
+# Penalty for breaking around an assignment operator
+PenaltyBreakAssignment: 1
+
+# The penalty for breaking a function call after opening parentheses
+PenaltyBreakBeforeFirstCallParameter: 64
+
+# The penalty for each line break introduced inside a string literal.
+PenaltyBreakString: 8
+
+# Penalty for putting the return type of a function onto its own line.
+PenaltyReturnTypeOnItsOwnLine: 64
+
+# Leave const/volatile position as is
+QualifierAlignment: Leave
+
+# Keep long comments as they are
+ReflowComments: true
+
+# Insert an empty line between definition blocks.
+SeparateDefinitionBlocks: Always
+
+# Sort includes in alphabetical fashion
+SortIncludes: CaseInsensitive
+
+# Sort using statements 
+SortUsingDeclarations: Lexicographic
+
+# Insert a space after the cast operator
+SpaceAfterCStyleCast: true
+
+# Do not insert space after NOT operator
+SpaceAfterLogicalNot: false
+
+# Do not insert space between template and angle brackets
+SpaceAfterTemplateKeyword: false
+
+# Insert a space before assignment operators
+SpaceBeforeAssignmentOperators: true
+
+# Keep case label and colon together
+SpaceBeforeCaseColon: false
+
+# Insert a space before a braced list used to initialize an object
+SpaceBeforeCpp11BracedList: true
+
+# Insert a space before the constructor initializer colon
+SpaceBeforeCtorInitializerColon: true
+
+# Insert a space before the class inheritance colon
+SpaceBeforeInheritanceColon: true
+
+# Put a space before opening parentheses only after control statement keywords
 SpaceBeforeParens: ControlStatements
-SpaceBeforeRangeBasedForLoopColon: 'true'
-SpaceInEmptyParentheses: 'false'
-SpacesInAngles: 'false'
-SpacesInCStyleCastParentheses: 'false'
-SpacesInParentheses: 'false'
-SpacesInSquareBrackets: 'false'
-Standard: Cpp11
-TabWidth: '4'
+SpaceBeforeRangeBasedForLoopColon: true
+
+# Remove spaces after < and before >.
+SpacesInAngles: Never
+
+# Remove spaces after ( and before )
+SpacesInParentheses: false
+
+# Remove spaces after [ and before ]
+SpacesInSquareBrackets: false
+
+# Always use spaces instead of tabs
 UseTab: Never
 
 ...
