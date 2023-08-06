@@ -19,4 +19,8 @@ return {
   {
     "sitiom/nvim-numbertoggle",
   },
+
+  {
+    "tpope/vim-sleuth"
+  },
 }
