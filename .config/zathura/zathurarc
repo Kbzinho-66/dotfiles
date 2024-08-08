@@ -3,3 +3,6 @@ set recolor-darkcolor "#eceff4"
 set recolor-lightcolor "#2e3440"
 
 map <C-i> recolor
+
+# Copiar pra clipboard
+set selection-clipboard clipboard
