@@ -1,25 +1,24 @@
 return {
 
-  -- install and configure each individual colorscheme
+	-- install and configure each individual colorscheme
 
-  -- tokyonight
-  {
-    "folke/tokyonight.nvim",
-    style = "storm",
-    lazy = true,
-  },
+	-- tokyonight
+	{
+		"folke/tokyonight.nvim",
+		lazy = true,
+	},
 
-  -- nordic
-  {
-    "AlexvZyl/nordic.nvim",
-    lazy = true,
-  },
+	-- nordic
+	{
+		"AlexvZyl/nordic.nvim",
+		lazy = true,
+	},
 
-  -- Actually load a colorscheme
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "tokyonight",
-    },
-  },
+	-- Actually load a colorscheme
+	{
+		"LazyVim/LazyVim",
+		opts = {
+			colorscheme = "tokyonight",
+		},
+	},
 }
