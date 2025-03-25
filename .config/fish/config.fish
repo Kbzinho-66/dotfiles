@@ -2,7 +2,7 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
     source ~/.asdf/asdf.fish
     fish_add_path $HOME/.cargo/bin
-    fish-ssh-agent
+    fish_ssh_agent
 end
 
 # pnpm
